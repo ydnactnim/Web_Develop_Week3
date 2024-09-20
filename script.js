@@ -1,12 +1,12 @@
 /* 게임 변수 3개 선언 */
-let startingPokerChips = 100; // points
+let STARTING_POKER_CHIPS = 100; // points
 let players = 3;
 let noOfStarterCards = 2;
 
 /* 3개의 플레이어 시작 점수 할당 */
-let playerOnePoints = startingPokerChips;
-let playerTwoPoints = startingPokerChips;
-let playerThreePoints = startingPokerChips;
+let playerOnePoints = STARTING_POKER_CHIPS;
+let playerTwoPoints = STARTING_POKER_CHIPS;
+let playerThreePoints = STARTING_POKER_CHIPS;
 
 /* 점수 배팅 */
 playerOnePoints -= 50;
