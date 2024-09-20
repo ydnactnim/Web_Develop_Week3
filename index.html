@@ -5,5 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // TODO: Add hello code
+      function getMessage(name) {
+        return "Hello, " + name + "...";
+      }
+
+      const message = getMessage("Ornella");
+      document.write(message);
+
+      setTimeout(
+        function () {
+          // anonymous function
+          console.log("Done!");
+        },
+        3000 // 3000 milliseconds (3 seconds)
+      );
+
+      // TODO: Add setTimeout code
+      setTimeout(() => {
+        document.write("...Hello again!");
+      }, 2000);
+
+      /*
+      setTimeout(
+      () => { // anonymous function
+      console.log('Done!');
+      },
+      3000 // 3000 milliseconds (3 seconds)
+      )
+      */
+    </script>
+  </body>
 </html>
