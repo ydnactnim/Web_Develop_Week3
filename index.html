@@ -5,5 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div id="introduction">
+      <script>
+        let name = "강준서";
+        let major = "컴퓨터공학";
+        let stuNum = "2022108096";
+
+        function writeName() {
+          document.getElementById(
+            "introduction"
+          ).innerHTML += `제 이름은 ${name}입니다.<br>`;
+        }
+
+        function writeMajor() {
+          document.getElementById(
+            "introduction"
+          ).innerHTML += `제 전공은 ${major}입니다.<br>`;
+        }
+
+        function writeStuNum() {
+          document.getElementById(
+            "introduction"
+          ).innerHTML += `제 학번은 ${stuNum}입니다.<br>`;
+        }
+
+        function runActionsSequentially() {
+          writeName();
+          setTimeout(() => {
+            writeMajor();
+          }, 3000);
+          setTimeout(() => {
+            writeStuNum();
+          }, 6000);
+        }
+
+        setInterval(runActionsSequentially, 9000);
+      </script>
+    </div>
+  </body>
 </html>
